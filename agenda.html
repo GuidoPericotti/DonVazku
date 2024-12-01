@@ -48,6 +48,7 @@
                 const cols = json.table.cols;
     
                 let thead = '<tr>';
+                console.log(col.label)
                 cols.forEach(col => {
                     thead += `<th class="border px-4 py-2">${col.label}</th>`;
                 });
