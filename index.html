@@ -7,7 +7,7 @@
     <meta name="description" content="Descubrí la mejor barberia de Olivos. Servicio de corte, afeitado y color. Barbería profesional. ¡Visitanos hoy!">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="barberia, corte de pelo, afeitado, barberia en Olivos, peluqueria masculina, estilismo">
-    <!-- Competar verificación de google -->
+    <!-- Completar verificación de google -->
     <meta name="google-site-verification" content="agregar codigo">
     <!-- Probar rendimiento en google https://pagespeed.web.dev/ -->
     <!-- Probar schema https://search.google.com/ -->
@@ -15,17 +15,22 @@
     <link rel="next" href="agenda.html">
     <link rel="manifest" href="assets/site.webmanifest">
     <!-- Favicon estándar -->
-    <link rel="icon" href="assets/favicon.ico" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="assets/Favicon/favicon.ico" sizes="16x16" type="image/x-icon">
     <!-- Favicon en diferentes tamaños -->
-    <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="assets/Favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/Favicon/android-chrome-192x192.png" sizes="192x192" type="image/png">
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
-    <link rel="apple-touch-icon" href="assets/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="assets/android-chrome-512x512.png" sizes="512x512">
+    <link rel="apple-touch-icon" href="assets/Favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="assets/Favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="assets/Favicon/android-chrome-512x512.png" sizes="512x512">
     <!-- Otros iconos -->
-    <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
-</head>
+    <link rel="icon" href="assets/Favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <!-- Ophen Graph para mejorar como se visualiza el link cuando se comparte en whatsapp -->
+    <meta property="og:title" content="Barberia DVZK - Don Vazku" />
+    <meta property="og:description" content="Descubrí la mejor barberia de Olivos. Servicio de corte, afeitado y color. Barbería profesional. ¡Visitanos hoy!" />
+    <meta property="og:image" content="\LogoDonVazku-FondoNegro.png" />
+    <meta property="og:url" content="https://donvazku.com.ar" />
+    <meta property="og:type" content="website" />
 
     <script type="application/ld+json">
         {
@@ -47,6 +52,7 @@
         </script>
         <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="overflow-x-hidden">
     <!--Header starts here-->
     <header>
@@ -56,9 +62,9 @@
                 <h1 class="mx-4 text-pretty md:text-2xl lg:text-lg font-semibold text-gray-500">Don Vazku Barberia en Olivos</h1>
                 <p class="mx-4 text-pretty md:text-2xl lg:text-lg font-semibold text-gray-500">Av. Maipu 2265</p>
             </div>
+            <!-- Menu button-->
                 <div class="relative flex h-[auto] items-center justify-between lg:py-2">
                     <div class="mx-4 flex items-center">
-                        <!-- Menu button-->
                         <button id="menu-toggle" type="button" class="z-10 relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="menu" aria-expanded="false">
                             <svg class="block size-6 md:size-10 lg:size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -66,13 +72,13 @@
                         </button>
                     </div>
                         
+                    <!--Brand-->
                     <div class="h-[10vh] lg:h-[6vh] flex flex-1 items-center justify-center">
-                        <!--Brand-->
                         <div class="flex shrink-0 items-center w-40 lg:w-24">
-                            <img src="DVZK-Dorado-con-Negro-_1_.png" alt="Logo Dorado Barberia Don Vazku DVZK">
+                            <img src="assets/Images/DVZK.webp" alt="Logo Dorado Barberia Don Vazku DVZK">
                         </div>
                     </div>
-
+                    <!--Instagram-->
                     <a class="mx-4 lg:mx-10" href="https://www.instagram.com/donvazku" target="_blank">
                         <button class="z-10 relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                             <svg class="lg:size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -80,16 +86,18 @@
                             </svg>
                         </button>
                     </a>
-                        
+                    <!--Menu-->
                     <div class="absolute hidden top-[10vh] lg:top-14 z-10 w-screen bg-gray-800" id="menu">
                         <div class="space-y-1 px-2 pb-3 pt-2">
-                            <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">NOSOTROS</a>
-                            <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SERVICIOS</a>
-                            <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTACTO</a>
+                            <a href="#nosotros" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">NOSOTROS</a>
+                            <a href="#servicios" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SERVICIOS</a>
+                            <a href="#eventos" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">EVENTOS</a>
+                            <a href="#redes" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">REDES</a>
+                            <a href="#contacto" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTACTO</a>
                         </div>
                     </div>
                 </div>
-                
+                <!--Script que maneja el menu-->
                 <script>
                     const menuToggle = document.getElementById('menu-toggle');
                     const mobileMenu = document.getElementById('menu');
@@ -98,10 +106,25 @@
                         mobileMenu.classList.toggle('hidden');
                     });
                 </script>
+                <!--Script que maneja el scroll a las secciones del menu-->
+                <script>
+                    document.querySelectorAll('nav a').forEach(anchor => {
+                        anchor.addEventListener('click', function(e) {
+                            e.preventDefault();
+
+                            const target = document.querySelector(this.getAttribute('href'));
+
+                            target.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        });
+                    });
+                </script>
         </nav>
     </header>
 
     <main>
+        <!--Home de la web-->
         <section class="w-screen h-[100vh] relative bg-black flex flex-col items-center md:items-start lg:items-start justify-between pt-1 lg:pt-0 lg:px-8">
             <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover z-0">
                 <source src="IntroDonVazku.mp4" type="video/mp4">
@@ -121,8 +144,8 @@
                 </svg>
             </a>
         </section>
-
-        <section class="h-[110vh] md:h-[200vh] w-screen">
+        <!--Nosotros-->
+        <section id="nosotros" class="h-[110vh] md:h-[200vh] w-screen">
             <div class="flex flex-col gap-y-10 bg-gradient-to-b from-gray-900 to-white px-6 py-1">
                 <div class="mx-auto flex flex-col lg:justify-between lg:flex-row lg:py-10 max-w-2xl lg:max-w-none gap-y-10 md:gap-y-0">
                     <div class="h-[50vh] md:h-[100vh]">
@@ -135,13 +158,13 @@
                         <p class="lg:w-[40vw] mt-0 text-base/7 font-semibold text-white">¡Te esperamos!</p>
                     </div>
                     <div class="h-[40vh] md:h-[100vh] px-1 py-10 md:px-40 md:py-0">
-                        <img class="lg:w-[30vw] rounded-xl" src="Interior-Barberia.jpg" alt="">
+                        <img class="lg:w-[30vw] rounded-xl" src="assets/Images/Interior-Barberia.webp" alt="">
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="mt-10 w-screen">
+        <!--Servicios-->
+        <section id="servicios" class="mt-10 w-screen">
             <div class="bg-white px-6 lg:px-4 py-4">
                 <div class="mx-auto flex flex-col max-w-2xl lg:max-w-none gap-y-10">
                     <div class="lg:flex lg:flex-col">
@@ -151,7 +174,7 @@
                     
                     <div class="flex flex-col gap-y-10 md:px-20 lg:flex lg:gap-x-10">
                         <article class="lg:w-[30vw] rounded-3xl bg-gray-700 ring-1 ring-gray-900/10 overflow-hidden">
-                            <img src="Card-Corte.jpg" alt="Color" class="w-full h-[50vh] object-cover">
+                            <img src="assets/Images/Card-Corte.webp" alt="Color" class="w-full h-[50vh] object-cover">
                             <div class="p-4">
                                 <p class="mt-4 text-base/7 font-semibold text-yellow-500">TRANSFORMA TU ESTILO</p>
                                 <h3 class="text-pretty text-2xl font-semibold tracking-tight text-white sm:text-5xl">CORTE DE PELO</h3>
@@ -180,7 +203,7 @@
                         </article>
     
                         <article class="lg:w-[30vw] rounded-3xl bg-gray-700 ring-1 ring-gray-900/10 overflow-hidden">
-                            <img src="Card-Barba.jpg" alt="Color" class="w-full h-[50vh] object-cover">
+                            <img src="assets/Images/Card-Barba.webp" alt="Color" class="w-full h-[50vh] object-cover">
                             <div class="p-4">
                                 <p class="mt-4 text-base/7 font-semibold text-yellow-500">ELEVA TU IMAGEN</p>
                                 <h3 class="text-pretty text-2xl font-semibold tracking-tight text-white sm:text-5xl">BARBA</h3>
@@ -209,7 +232,7 @@
                         </article>
     
                         <article class="lg:w-[30vw] rounded-3xl bg-gray-700 ring-1 ring-gray-900/10 overflow-hidden">
-                            <img src="Card-Color.jpg" alt="Color" class="w-full h-[50vh] object-cover">
+                            <img src="assets/Images/Card-Color.webp" alt="Color" class="w-full h-[50vh] object-cover">
                             <div class="p-4">
                                 <p class="mt-4 text-base/7 font-semibold text-yellow-500">RESALTA TU PERSONALIDAD</p>
                                 <h3 class="text-pretty text-2xl font-semibold tracking-tight text-white sm:text-5xl">COLOR</h3>
@@ -243,7 +266,7 @@
     </main>
 
 <!--Eventos-->
-<section class="h-[100vh] md:h-[110vh] mx-auto mt-10 p-6">
+<section  id="eventos" class="h-[100vh] md:h-[110vh] mx-auto mt-10 p-6">
     <div class="bg-white">
         <div class="mx-auto flex flex-col max-w-2xl lg:max-w-none gap-y-10">
             <div class="lg:max-w-lg">
@@ -255,10 +278,10 @@
 
     <div class="mt-4 w-[90vw] rounded-3xl overflow-hidden relative">
         <div id="carousel" class="flex transition-transform duration-500">
-            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="EventoDVZK-1.jpg" alt="">
-            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="EventoDVZK-2.jpg" alt="">
-            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="EventoDVZK-3.jpg" alt="">
-            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="EventoDVZK-4.jpg" alt="">
+            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="assets/Images/EventoDVZK-1.webp" alt="">
+            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="assets/Images/EventoDVZK-2.webp" alt="">
+            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="assets/Images/EventoDVZK-3.webp" alt="">
+            <img class="w-full h-[40vh] object-cover flex-shrink-0" src="assets/Images/EventoDVZK-4.webp" alt="">
         </div>
         <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
@@ -271,7 +294,7 @@
             </svg>
         </button>
     </div>
-    
+    <!--Script que maneja botones-->
     <script>
         const carousel = document.getElementById('carousel');
         const images = carousel.children;
@@ -356,8 +379,8 @@
         SOLICITAR COTIZACION
     </a>
 
-<!--Redes-->
-    <section class="h-[100vh] md:h-[110vh] mx-auto mt-10 p-6">
+    <!--Redes-->
+    <section id="redes" class="h-[100vh] md:h-[110vh] mx-auto mt-10 p-6">
         <div class="bg-white">
             <div class="mx-auto flex flex-col max-w-2xl lg:max-w-none gap-y-10">
                 <div class="lg:max-w-lg">
@@ -396,8 +419,8 @@
     </section>
 
 
-<!--Contact-->
-    <section class="bg-gradient-to-b from-white to-gray-900 h-[100vh] mx-auto p-6">
+    <!--Contacto-->
+    <section id="contacto" class="bg-gradient-to-b from-white to-gray-900 h-[100vh] mx-auto p-6">
         <div class="py-4">
             <div class="mx-auto flex flex-col max-w-2xl lg:max-w-none gap-y-10">
                 <div class="lg:max-w-lg">
@@ -436,14 +459,14 @@
             </div>
         </div>
     </section>
-<!--Footer-->
+    <!--Footer-->
     <footer class="border-t-4 bg-gray-900 text-white py-6">
         <div class="flex flex-col justify-between items-center">
-            <div class="mb-4">
-                <h5 class="text-lg font-bold">Don Vazku</h5>
-                <p class="text-sm">© 2024 Don Vazku. Todos los derechos reservados.</p>
+            <div class="flex items-center">
+                <img class="h-20" src="assets/Images/DonVazkuBarberia.webp" alt="">
+                <p class="text-md">© 2024 Don Vazku. Todos los derechos reservados.</p>
             </div>
-            <div class="mb-4 md:mb-0">
+            <div class="mt-4 md:mb-0">
                 <p>Desarrollado por <a class="font-semibold" target="_blank" href="https://luminosparks.com.ar">LuminoSparks.</a></p>
             </div>
         </div>
